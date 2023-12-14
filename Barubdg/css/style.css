@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #353641;
+}
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #353641;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #353641;
+  text-decoration: none;
+}
+
+nav a {
+  color: #353641;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #353641;
+  bottom: -5px;
+  left: 25%;
+}
+
+.center {
+  text-align: left;
+  margin-left: 206px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: left;
+}
+
+h2 {
+  font-size: 120px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: left;
+  overflow-wrap: break-word;
+  max-width: calc(100% - 200px);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #353641;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  border: 0;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {    
+  .center {
+    margin-left: 0;
+  }
+  
+  p {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+.container {
+display: flex;
+justify-content: flex-start;
+margin: 20px auto;
+}
+
+
+.info{
+max-width: 1200px;
+/*margin: 20px auto;*/
+padding: 200px;
+/*
+background-color: #fff;
+border: 1px solid #ccc;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+}
+
+img{
+  width: 630px;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+}
+
+.wave{
+/*background-color: #333;
+padding: 10px;*/
+color: white;
+text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+z-index: 1;
+}
+
+nav a.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #353641;
+  bottom: -5px;
+  left: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
