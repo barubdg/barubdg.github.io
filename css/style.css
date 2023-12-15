@@ -139,8 +139,62 @@ nav a.active:after {
   left: 25%;
 }
 
+.abrir-menu{
+  display: none;
+}
+.cerrar-menu{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
+
+ .abrir-menu, .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu{
+    color: #353641;
+  }
+  .cerrar-menu{
+    color: #ffffff;
+  }
+
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #353641;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+  }
+  .nav.visible
+  {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list
+  {
+    flex-direction: column;
+    align-items: end;
+
+  }
+
+  .nav-list li a {
+  color: #ffffff;
+  }
+
 
   .container {
     display: flex;
@@ -166,7 +220,9 @@ nav a.active:after {
       position: relative;
       z-index: 1;
       bottom: 0;
-    } 
+    }
+
+
   /*Estilos para dispositivos móviles*/
 }
 
