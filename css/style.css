@@ -147,7 +147,6 @@ nav a.active:after {
 }
 
 @media screen and (max-width: 768px) {
-
  .abrir-menu, .cerrar-menu{
     display: block;
     border: 0;
@@ -159,6 +158,7 @@ nav a.active:after {
   .abrir-menu{
     color: #353641;
   }
+
   .cerrar-menu{
     color: #ffffff;
   }
@@ -188,13 +188,11 @@ nav a.active:after {
   {
     flex-direction: column;
     align-items: end;
-
   }
 
   .nav-list li a {
   color: #ffffff;
   }
-
 
   .container {
     display: flex;
@@ -202,26 +200,18 @@ nav a.active:after {
     justify-content: flex-start;
     margin: 20px auto;
     }
-    
-    
-    .info{
+
+  .info{
     max-width: 90%;
-    /*margin: 20px auto;*/
     padding: 5vh;
-    /*
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
     }
 
-    
-    img{
+  img{
       max-width: 100%;
       position: relative;
       z-index: 1;
       bottom: 0;
     }
-
 
   /*Estilos para dispositivos móviles*/
 }
@@ -229,31 +219,72 @@ nav a.active:after {
 
 @media (min-width: 768px) and (max-width: 1024px) 
 {
+  .abrir-menu, .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu{
+    color: #353641;
+  }
+
+  .cerrar-menu{
+    color: #ffffff;
+  }
+
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #353641;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+  }
+  .nav.visible
+  {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list
+  {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+  color: #ffffff;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 20px auto;
     }
-    
-    
-    .info{
+
+  .info{
     max-width: 90%;
-    /*margin: 20px auto;*/
     padding: 5vh;
-    /*
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
     }
 
-    
-    img{
+  img{
       max-width: 100%;
       position: relative;
       z-index: 1;
       bottom: 0;
-    } 
+    }
+
   /*Estilos para tabletas*/
 }
 
