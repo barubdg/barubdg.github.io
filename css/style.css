@@ -110,7 +110,7 @@ border: 1px solid #ccc;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
 }
 
-img{
+.image img{
   width: 630px;
   position: fixed;
   z-index: 2;
@@ -118,8 +118,6 @@ img{
 }
 
 .wave{
-/*background-color: #333;
-padding: 10px;*/
 color: white;
 text-align: center;
 position: fixed;
@@ -147,6 +145,31 @@ nav a.active:after {
 }
 
 @media screen and (max-width: 768px) {
+  
+  h1 {
+    font-size: 8vw;
+  }
+  
+  h2 {
+    font-size: 13vw;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 4vw;
+    margin-bottom: 1rem;
+    text-align: justify;
+    max-width: calc(100% - 1rem);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 4vw;
+    font-weight: 400;
+    border-radius: 1rem;
+  }
+
  .abrir-menu, .cerrar-menu{
     display: block;
     border: 0;
@@ -177,6 +200,7 @@ nav a.active:after {
     background-color: #353641;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    z-index: 3;
   }
   .nav.visible
   {
@@ -196,7 +220,7 @@ nav a.active:after {
 
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     margin: 20px auto;
     }
@@ -204,13 +228,23 @@ nav a.active:after {
   .info{
     max-width: 90%;
     padding: 5vh;
+    order:1;
     }
 
-  img{
-      max-width: 100%;
-      position: relative;
-      z-index: 1;
-      bottom: 0;
+  .image{
+    width: 100%;
+    order: 2;
+    margin-top: 38vh;
+  }
+  .image img{
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+  }
+
+  .wave{
+    display: none;
     }
 
   /*Estilos para dispositivos móviles*/
@@ -219,71 +253,7 @@ nav a.active:after {
 
 @media (min-width: 768px) and (max-width: 1024px) 
 {
-  .abrir-menu, .cerrar-menu{
-    display: block;
-    border: 0;
-    font-size: 1.25rem;
-    background-color: transparent;
-    cursor: pointer;
-  }
 
-  .abrir-menu{
-    color: #353641;
-  }
-
-  .cerrar-menu{
-    color: #ffffff;
-  }
-
-  .nav{
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #353641;
-    padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
-  }
-  .nav.visible
-  {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-list
-  {
-    flex-direction: column;
-    align-items: end;
-  }
-
-  .nav-list li a {
-  color: #ffffff;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 20px auto;
-    }
-
-  .info{
-    max-width: 90%;
-    padding: 5vh;
-    }
-
-  img{
-      max-width: 100%;
-      position: relative;
-      z-index: 1;
-      bottom: 0;
-    }
 
   /*Estilos para tabletas*/
 }
@@ -291,76 +261,12 @@ nav a.active:after {
 
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .abrir-menu, .cerrar-menu{
-    display: block;
-    border: 0;
-    font-size: 1.25rem;
-    background-color: transparent;
-    cursor: pointer;
-  }
 
-  .abrir-menu{
-    color: #353641;
-  }
-
-  .cerrar-menu{
-    color: #ffffff;
-  }
-
-  .nav{
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #353641;
-    padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
-  }
-  .nav.visible
-  {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-list
-  {
-    flex-direction: column;
-    align-items: end;
-  }
-
-  .nav-list li a {
-  color: #ffffff;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 20px auto;
-    }
-
-  .info{
-    max-width: 90%;
-    padding: 5vh;
-    }
-
-  img{
-      max-width: 100%;
-      position: relative;
-      z-index: 1;
-      bottom: 0;
-    }
   /*Estilos para pantallas pequeñas*/
 }
 
-/*
+
 @media (min-width: 1280px) {
-  Estilos para pantallas grandes
-}*/
+  /*Estilos para pantallas grandes*/
+}
 
