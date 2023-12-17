@@ -27,3 +27,67 @@ p, .p2
     text-align: justify;
     max-width: none;
 }
+
+@media screen and (max-width: 768px)
+{
+
+      /*SIRVE PARA EL MENU HAMBURGUESA*/
+
+ .abrir-menu, .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu{
+    color: #353641;
+  }
+
+  .cerrar-menu{
+    color: #ffffff;
+  }
+
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #353641;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    z-index: 3;
+    
+  }
+  .nav.visible
+  {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list
+  {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li{
+    margin-bottom: 1rem;
+  }
+
+  .nav-list li a {
+  color: #ffffff;
+  }
+
+  /*FIN MENU HAMBURGUESA*/
+
+
+
+}

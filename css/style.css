@@ -170,6 +170,8 @@ nav a.active:after {
     border-radius: 1rem;
   }
 
+  /*SIRVE PARA EL MENU HAMBURGUESA*/
+
  .abrir-menu, .cerrar-menu{
     display: block;
     border: 0;
@@ -222,6 +224,8 @@ nav a.active:after {
   .nav-list li a {
   color: #ffffff;
   }
+
+  /*FIN MENU HAMBURGUESA*/
 
   .container {
     display: flex;
