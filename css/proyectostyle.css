@@ -3,13 +3,6 @@
     justify-content: flex-start;
     margin: 20px auto;
 }
-
-/*
-.cuadro1 > div {
-    margin-right: 10px; 
-}*/
-
-
 .proyecto1
 {
     margin: 20px auto;
@@ -20,7 +13,6 @@
     max-width: 400px;
     max-height: 170px;
 }
-
 .proyecto2
 {
     margin: 20px auto;
@@ -31,7 +23,6 @@
     max-width: 500px;
     max-height: 170px;
 }
-
 .btn_echale {
     display: inline-block;
     padding: 10px 20px;
@@ -44,7 +35,6 @@
     text-decoration: none;
     margin: 10px;
   }
-
 p{
     max-width: none;
     font-size: 24px;
@@ -53,20 +43,51 @@ p{
   {
     font-size: 18px;
   }
-
-
-  .proyecto1, .proyecto2
+.proyecto1, .proyecto2
   {
       box-sizing: border-box;
       margin-right: 10px;
   }
-
-
-  .subcuadro
+.subcuadro
   {
     display: flex;
     justify-content: space-between;
     margin: 5%;
   }
 
+
+  @media screen and (max-width: 768px)
+  {
+    .cuadro1
+    {
+      margin: 10% auto;
+    }
+    .subcuadro
+    {
+      flex-direction: column;
+    }
+    p{
+      font-size: 6vw;
+    }
+    #span2
+    {
+      font-size: 0.7rem;
+    }
+    .proyecto1, .proyecto2
+    {
+      margin-right: 5%;
+    }
+    .btn_echale
+    {
+      padding: 4%;
+      font-size: 49%;
+    }
+    .proyecto2
+    {
+        max-width: 95%;
+        max-height: 50%;
+    }
+
+
+  }
 
