@@ -1,0 +1,44 @@
+
+.contenedor
+{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px auto;
+}
+.formaciones
+{
+    margin: 20px auto;
+    padding: 100px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left;
+    overflow-wrap: break-word;
+    max-width: calc(100% - 0px);
+  }
+
+
+#span1
+{
+    color: #353641;
+    font-size:1vw;
+    font-family:'Roboto-Medium', 'Roboto';
+    font-weight:500;
+}
+#span2
+{
+    fill: #353641;
+    font-size: 2vw;
+    font-family: 'Roboto-Bold', 'Roboto';
+    font-weight: 700;
+}
+#span3
+{
+    fill:#353641;
+    font-size: 1vw;
+    font-family: 'Roboto-Regular', 'Roboto';
+
+}
