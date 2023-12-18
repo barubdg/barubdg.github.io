@@ -4,6 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     margin: 20px auto;
+
 }
 .contactame
 {
@@ -17,8 +18,21 @@
     margin: 5%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait)
+{
+    .contactame
+    {
+      padding: 10%;
+    }
+  /*Estilos para dispositivos móviles*/
+}
 
+@media screen and (max-width: 768px) and (orientation: landscape)
+{
+    .contactame
+    {
+      padding: 10%;
+    }
   /*Estilos para dispositivos móviles*/
 }
 
@@ -29,13 +43,10 @@
   /*Estilos para tabletas*/
 }
 
-
-
 @media (min-width: 1024px) and (max-width: 1280px) {
 
   /*Estilos para pantallas pequeñas*/
 }
-
 
 @media (min-width: 1280px) {
   /*Estilos para pantallas grandes*/
