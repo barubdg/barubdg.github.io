@@ -88,7 +88,7 @@ p{
         max-height: 50%;
     }
 
-
+  /*Estilos para dispositivos móviles*/
   }
 
   @media (min-width: 768px) and (max-width: 1024px) 
