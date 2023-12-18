@@ -4,11 +4,18 @@
     display: flex;
     justify-content: flex-start;
     margin: 20px auto;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .formaciones
 {
     margin: 20px auto;
     padding: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -46,6 +53,30 @@ p {
 
 
 @media screen and (max-width: 768px) {
+    .formaciones
+    {
+        padding: 15%;
+    }    
+    p {
+        font-size: 18%;
+        max-width: calc(100% - 0vw);
+      }
+    
+    
+    #span1
+    {
+        font-size:3vw;
+        font-weight:500;
+    }
+    #span2
+    {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    #span3
+    {
+        font-size: 3vw;    
+    }
 
   /*Estilos para dispositivos móviles*/
 }
