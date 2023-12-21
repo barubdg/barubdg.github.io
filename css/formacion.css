@@ -52,24 +52,24 @@ p {
         margin: 1rem auto;
     }    
     p {
-        font-size: 18%;
+        font-size: 2.5vw;
         max-width: calc(100% - 0vw);
       }
     
     
     #span1
     {
-        font-size:3vw;
+        font-size:2vw;
         font-weight:500;
     }
     #span2
     {
-        font-size: 4vw;
+        font-size: 3vw;
         font-weight: 700;
     }
     #span3
     {
-        font-size: 3vw;    
+        font-size: 2vw;    
     }
   /*Estilos para dispositivos móviles*/
 }
@@ -82,24 +82,24 @@ p {
       margin: 1rem auto;
   }    
   p {
-      font-size: 18%;
+      font-size: 2.5vw;
       max-width: calc(100% - 0vw);
     }
   
   
   #span1
   {
-      font-size:3vw;
+      font-size: 2vw;
       font-weight:500;
   }
   #span2
   {
-      font-size: 4vw;
+      font-size: 3vw;
       font-weight: 700;
   }
   #span3
   {
-      font-size: 3vw;    
+      font-size: 2vw;    
   }
   /*Estilos para tabletas*/
 }
@@ -112,14 +112,14 @@ p {
       margin: 1rem auto;
   }    
   p {
-      font-size: 18%;
+      font-size: 2.5vw;
       max-width: calc(100% - 0vw);
     }
   
   
   #span1
   {
-      font-size:2vw;
+      font-size: 2vw;
       font-weight:500;
   }
   #span2

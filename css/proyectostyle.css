@@ -66,30 +66,25 @@ p{
       flex-direction: column;
     }
     p{
-      font-size: 4vw;
+      font-size: 2.5vw;
     }
     #span2
     {
-      font-size: 1.5rem;
+      font-size: 0.9rem;
     }
     .proyecto1, .proyecto2
     {
-      margin-right: 5%;
+      margin-right: 10%;
     }
     .btn_echale
     {
+      font-size: 0.6rem;
       padding: 3%;
     }
 
-    .proyecto1
+    .proyecto1, .proyecto2
     {
         padding: 20px;
-        max-width: 95%;
-        max-height: 50%;
-    }
-
-    .proyecto2
-    {
         max-width: 95%;
         max-height: 50%;
     }
@@ -124,30 +119,25 @@ p{
     flex-direction: column;
   }
   p{
-    font-size: 4vw;
+    font-size: 2.5vw;
   }
   #span2
   {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
   .proyecto1, .proyecto2
   {
-    margin-right: 5%;
+    margin-right: 10%;
   }
   .btn_echale
   {
+    font-size: 0.6rem;
     padding: 3%;
   }
 
-  .proyecto1
+  .proyecto1, .proyecto2
   {
       padding: 20px;
-      max-width: 95%;
-      max-height: 50%;
-  }
-
-  .proyecto2
-  {
       max-width: 95%;
       max-height: 50%;
   }
@@ -157,6 +147,8 @@ p{
 @media (min-width: 1024px) and (max-width: 1280px)
 {
   
+
+
     /*Estilos para pantallas pequeñas*/
 }
   
