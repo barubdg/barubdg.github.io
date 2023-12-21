@@ -4,18 +4,11 @@
     display: flex;
     justify-content: flex-start;
     margin: 20px auto;
-
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .formaciones
 {
     margin: 20px auto;
-    padding: 100px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 100px;  
 }
 
 p {
@@ -55,7 +48,8 @@ p {
 @media screen and (max-width: 768px) {
     .formaciones
     {
-        padding: 15%;
+        padding: 12%;
+        margin: 1rem auto;
     }    
     p {
         font-size: 18%;
@@ -79,22 +73,69 @@ p {
     }
   /*Estilos para dispositivos móviles*/
 }
-
 @media (min-width: 768px) and (max-width: 1024px) 
 {
 
-
+  .formaciones
+  {
+      padding: 12%;
+      margin: 1rem auto;
+  }    
+  p {
+      font-size: 18%;
+      max-width: calc(100% - 0vw);
+    }
+  
+  
+  #span1
+  {
+      font-size:3vw;
+      font-weight:500;
+  }
+  #span2
+  {
+      font-size: 4vw;
+      font-weight: 700;
+  }
+  #span3
+  {
+      font-size: 3vw;    
+  }
   /*Estilos para tabletas*/
 }
 
-
-
-@media (min-width: 1024px) and (max-width: 1280px) {
-
+@media (min-width: 1024px) and (max-width: 1280px)
+{
+  .formaciones
+  {
+      padding: 12%;
+      margin: 1rem auto;
+  }    
+  p {
+      font-size: 18%;
+      max-width: calc(100% - 0vw);
+    }
+  
+  
+  #span1
+  {
+      font-size:2vw;
+      font-weight:500;
+  }
+  #span2
+  {
+      font-size: 3vw;
+      font-weight: 700;
+  }
+  #span3
+  {
+      font-size: 2vw;    
+  }
   /*Estilos para pantallas pequeñas*/
 }
 
 
 @media (min-width: 1280px) {
+  
   /*Estilos para pantallas grandes*/
 }

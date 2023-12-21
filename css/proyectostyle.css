@@ -66,11 +66,11 @@ p{
       flex-direction: column;
     }
     p{
-      font-size: 6vw;
+      font-size: 4vw;
     }
     #span2
     {
-      font-size: 0.7rem;
+      font-size: 1.5rem;
     }
     .proyecto1, .proyecto2
     {
@@ -78,16 +78,24 @@ p{
     }
     .btn_echale
     {
-      padding: 4%;
-      font-size: 49%;
+      padding: 3%;
     }
+
+    .proyecto1
+    {
+        padding: 20px;
+        max-width: 95%;
+        max-height: 50%;
+    }
+
     .proyecto2
     {
         max-width: 95%;
         max-height: 50%;
     }
-  /*Estilos para dispositivos móviles*/
+  /*Estilos para dispositivos móviles en modo vertical*/
 }
+
 @media screen and (max-width: 768px) and (orientation: landscape) {
   p{
     font-size: 2.5vw;
@@ -96,30 +104,64 @@ p{
   {
       max-width: 400px;
       max-height: 170px;
+      
   }
   .proyecto2
   {
       max-width: 300px;
       max-height: 170px;
   }
+  /*Estilos para dispositivos móviles en modo horizontal*/
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .cuadro1
+  {
+    margin: 10% auto;
+  }
+  .subcuadro
+  {
+    flex-direction: column;
+  }
+  p{
+    font-size: 4vw;
+  }
+  #span2
+  {
+    font-size: 1.5rem;
+  }
+  .proyecto1, .proyecto2
+  {
+    margin-right: 5%;
+  }
+  .btn_echale
+  {
+    padding: 3%;
+  }
+
+  .proyecto1
+  {
+      padding: 20px;
+      max-width: 95%;
+      max-height: 50%;
+  }
+
+  .proyecto2
+  {
+      max-width: 95%;
+      max-height: 50%;
+  }
+    /*Estilos para tabletas*/
 }
 
-
-
-
-  @media (min-width: 768px) and (max-width: 1024px) 
-  {
-  
-  
-    /*Estilos para tabletas*/
-  }
-  
-  @media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px)
+{
   
     /*Estilos para pantallas pequeñas*/
-  }
+}
   
   
   @media (min-width: 1280px) {
+    
     /*Estilos para pantallas grandes*/
   }

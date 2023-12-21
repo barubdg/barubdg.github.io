@@ -102,7 +102,6 @@ margin: 20px auto;
 
 .info{
 max-width: 1200px;
-/*margin: 20px auto;*/
 padding: 200px;
 /*
 background-color: #fff;
@@ -258,9 +257,6 @@ nav a.active:after {
   /*Estilos para dispositivos móviles*/
 }
 
-
-
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)
 {
 
@@ -274,7 +270,7 @@ nav a.active:after {
   }
   
   p {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-bottom: 1rem;
     text-align: justify;
     max-width: calc(100% - 1rem);
@@ -283,13 +279,12 @@ nav a.active:after {
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 400;
     border-radius: 1rem;
   }
 
   /*SIRVE PARA EL MENU HAMBURGUESA*/
-
  .abrir-menu, .cerrar-menu{
     display: block;
     border: 0;
@@ -297,11 +292,9 @@ nav a.active:after {
     background-color: transparent;
     cursor: pointer;
   }
-
   .abrir-menu{
     color: #353641;
   }
-
   .cerrar-menu{
     color: #ffffff;
   }
@@ -328,21 +321,17 @@ nav a.active:after {
     opacity: 1;
     visibility: visible;
   }
-
   .nav-list
   {
     flex-direction: column;
     align-items: end;
   }
-
   .nav-list li{
     margin-bottom: 1rem;
   }
-
   .nav-list li a {
   color: #ffffff;
   }
-
   /*FIN MENU HAMBURGUESA*/
 
   .container {
@@ -377,15 +366,65 @@ nav a.active:after {
   /*Estilos para tabletas*/
 }
 
-
-
 @media (min-width: 1024px) and (max-width: 1280px) {
+  h1 {
+    font-size: 5vw;
+  }
+  
+  h2 {
+    font-size: 10vw;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 2vw;
+    margin-bottom: 1rem;
+    text-align: justify;
+    max-width: calc(100% - 1rem);
+  }
 
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 3vw;
+    font-weight: 400;
+    border-radius: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20% auto;
+    }
+
+  .info{
+    max-width:65%;
+    padding: 2vh;
+    order: 1;
+    }
+
+  .image{
+    display: flex;
+    width: 100%;
+    order: 2;
+  }
+  .image img{
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+  }
+
+  .wave{
+    display: none;
+    }
   /*Estilos para pantallas pequeñas*/
 }
 
 
 @media (min-width: 1280px) {
+  
   /*Estilos para pantallas grandes*/
 }
 
