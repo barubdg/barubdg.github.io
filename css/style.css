@@ -97,32 +97,26 @@ p {
 .container {
 display: flex;
 justify-content: flex-start;
-margin: 20px auto;
+margin: 10% auto;
 }
 
 .info{
-max-width: 1200px;
-padding: 200px;
+
+max-width: 50%;
+padding: 10%;
+
 /*
 background-color: #fff;
 border: 1px solid #ccc;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
 }
 
+
 .image img{
   width: 630px;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
-}
-
-.wave{
-color: white;
-text-align: center;
-position: fixed;
-bottom: 0;
-width: 100%;
-z-index: 1;
 }
 
 nav a.active:after {
@@ -423,8 +417,44 @@ nav a.active:after {
 }
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px)
+{
+  h1 {
+    font-size: 3vw;
+  }
   
+  h2 {
+    font-size: 5vw;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5vw;
+    margin-bottom: 1rem;
+    text-align: justify;
+    max-width: calc(100% - 1rem);
+  }
+
+  .btn {
+    font-size: 1.5vw;
+  }
+  
+
+  .container {
+    margin: 5% auto;
+  }
+  
+  .info{
+  max-width: 50%;
+  padding: 10%;
+  }
+  
+  .image img{
+    width: 630px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+  }
   /*Estilos para pantallas grandes*/
 }
 
