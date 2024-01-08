@@ -243,7 +243,7 @@ nav a.active:after {
   /*Estilos para dispositivos móviles*/
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)
+@media (min-width: 768px) and (max-width: 941px) and (orientation: portrait)
 {
 
   h1 {
@@ -341,6 +341,104 @@ nav a.active:after {
     bottom: 0;
   }
   /*Estilos para tabletas*/
+}
+
+@media (min-width: 942px) and (max-width: 1023px)
+{
+  h1 {
+    font-size: 4vw;
+  }
+  
+  h2 {
+    font-size: 9vw;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 2.5vw;
+    margin-bottom: 1rem;
+    text-align: justify;
+    max-width: calc(100% - 5rem);
+  }
+
+  .btn {
+    font-size: 2.5vw;
+  }
+
+  /*SIRVE PARA EL MENU HAMBURGUESA*/
+ .abrir-menu, .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .abrir-menu{
+    color: #353641;
+  }
+  .cerrar-menu{
+    color: #ffffff;
+  }
+
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #353641;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    z-index: 3;
+    
+  }
+  .nav.visible
+  {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list
+  {
+    flex-direction: column;
+    align-items: end;
+  }
+  .nav-list li{
+    margin-bottom: 1rem;
+  }
+  .nav-list li a {
+  color: #ffffff;
+  }
+  /*FIN MENU HAMBURGUESA*/
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20% auto;
+    }
+
+  .info{
+    max-width:65%;
+    padding: 2vh;
+    order: 1;
+    }
+
+  .image{
+    display: flex;
+    width: 100%;
+    order: 2;
+  }
+  .image img{
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
