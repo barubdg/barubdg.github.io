@@ -498,7 +498,7 @@ nav a.active:after {
   }
   
   h2 {
-    font-size: 5vw;
+    font-size: 7vw;
     margin-bottom: 1rem;
   }
   
@@ -506,27 +506,35 @@ nav a.active:after {
     font-size: 1.5vw;
     margin-bottom: 1rem;
     text-align: justify;
-    max-width: calc(100% - 1rem);
+    max-width: calc(100% - 5rem);
   }
 
   .btn {
-    font-size: 1.5vw;
+    font-size: 2vw;
+    font-weight: 400;
+    border-radius: 1rem;
   }
-  
 
   .container {
-    margin: 5% auto;
-  }
-  
-  .info{
-  max-width: 50%;
-  padding: 10%;
-  }
-  
+    display: flex;
+    justify-content: flex-start;
+    margin: 10% auto;
+    }
 
+  .info{
+    max-width:65%;
+    order: 1;
+    }
+
+  .image{
+    display: flex;
+    width: 100%;
+    order: 2;
+  }
   .image img{
-    width: 400vw;
-    position: fixed;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
     bottom: 0;
   }
   /*Estilos para pantallas grandes*/
