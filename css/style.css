@@ -524,9 +524,8 @@ nav a.active:after {
   }
   
   .image img{
-    width: 45%;
+    width: 45vw;
     position: fixed;
-    z-index: 1;
     bottom: 0;
   }
   /*Estilos para pantallas grandes*/
