@@ -525,7 +525,7 @@ nav a.active:after {
   
 
   .image img{
-    width: 40vw;
+    width: 400vw;
     position: fixed;
     bottom: 0;
   }
