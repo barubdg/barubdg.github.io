@@ -523,8 +523,9 @@ nav a.active:after {
   padding: 10%;
   }
   
+
   .image img{
-    width: 45vw;
+    width: 40vw;
     position: fixed;
     bottom: 0;
   }
